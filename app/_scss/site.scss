@@ -1,0 +1,19 @@
+/* Master style file */
+
+/* Math utils */
+@import 'math';
+/* Variables, including Bootstrap vars */
+@import 'variables';
+/* Bootstrap SASS version with custom includes */
+@import 'bootstrap';
+//@import 'typography';
+/* Site specific components */
+@import '_components/globals.scss';
+@import '_components/nav.scss';
+@import '_components/splash.scss';
+@import '_components/research.scss';
+@import '_components/bio.scss';
+@import '_components/interests.scss';
+@import '_components/blog.scss';
+@import '_components/exhibit-a.scss';
+@import '_components/thesis.scss';

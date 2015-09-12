@@ -1,0 +1,36 @@
+# Jekyll configuration precedence:
+# 1. Gruntfile task
+# 2. config.build.yml
+# 3. config.yml
+
+name: harshadparanjape.com_min
+description: Personal website of Harshad Paranjape
+author:
+  name: Harshad Paranjape
+  email: contact@harshadparanjape.com
+url: http://harshadparanjape.com/
+#url: http://localhost/harshadparanjape.com/dist
+
+# Grunt handles images and assets.
+exclude: ['img', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+include: ['.htaccess']
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+#permalink: pretty
+permalink: /:year/:month/:day/:title.html
+paginate: 5
+paginate_path: 'page:num'
+
+# Markdown library
+markdown: kramdown
+#markdown: redcarpet
+#   extensions: ['fenced_code_blocks', 'smart']
+
+pygments: true
+
+excerpt_separator: <!--more-->

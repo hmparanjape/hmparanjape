@@ -1,0 +1,47 @@
+/* Bio */
+
+/* Desktop styles */
+.hp-contact {
+  background-color: $gray-lighter;
+}
+
+.hp-bio {
+  margin-top: 2em;
+}
+
+.hp-cv-prompt {
+  color: black;
+  text-align: center;
+  background: darken($gray-lighter, 10%);
+  border: 0;
+}
+
+.hp-cv-prompt:hover {
+  background: $gray-lighter;
+}
+
+.hp-edu-title {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-size: $font-size-large;
+}
+
+.hp-edu-description {
+  margin-bottom: 0.75em;
+  margin-top: 2px;
+  font-size: $font-size-base;
+}
+
+.hp-contact {
+  font-size: $font-size-large;
+}
+
+/* Moderate screen styles */
+@media (max-width: $screen-desktop) {
+  .hp-edu-description,
+  .hp-contact
+  {
+    font-size: $font-size-base;
+  }
+
+}

@@ -1,0 +1,36 @@
+/* Nav */
+
+/* Desktop styles */
+.navbar {
+  .navbar-brand {
+    font-size: $font-size-large;
+    // font-weight: 100;
+  }
+}
+
+.navbar .container .navbar-header button .icon-bar {
+  background-color: $brand-primary;
+}
+
+.navbar-nav {
+  background-color: white;
+}
+
+.hp-exhibit-slash {
+  color: $gray-light;
+}
+
+.hp-nav-email {
+  background-color: lighten($brand-tertiary-1, 7%);
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+}
+
+/* Moderate screen styles */
+@media (max-width: $screen-phone) {
+  .navbar {
+    .navbar-brand {
+      font-size: 0.95 * $font-size-large;
+    }
+  }
+}

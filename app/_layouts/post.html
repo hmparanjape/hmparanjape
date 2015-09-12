@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+
+<div class="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand"><a href="{{page.root}}/">Harshad Paranjape</a> | Blog</span>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="{{page.root}}/exhibit-a.html">Exhibit<span class="hp-exhibit-slash">/</span>A</a></li>
+        <li><a href="{{page.root}}/blog.html">Blog</a></li>
+        <li><a href="mailto:hi@hm.paranja.pe"><span class="hp-nav-email">Email</span></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<!-- Container -->
+<div class="container hp-blog">
+
+  <div class="row">
+    <div class="col-md-10 hp-blog-post-heading">
+      <h1>{{ page.title }}</h1>
+
+      <div class="hp-blog-subtitle">
+
+        <p class="hp-blog-subtitle-item small">{{ page.date | date: '%B %d, %Y' }}</p>
+        {% if page.categories contains 'new' %}
+        <span class="hp-blog-subtitle-item small hp-blog-post-new-tag">New</span>
+        {% endif %}
+
+      </div>
+
+    </div>
+
+
+    <div class="col-md-10 hp-blog-post">
+
+      {{ content }}
+
+    </div>
+
+    <div class="col-md-10 hp-blog-post-tail">
+
+      <div class="hp-blog-subtitle">
+
+        <ul class="list-inline hp-blog-subtitle-item">
+          {% for category in page.categories %}
+          <li class="hp-blog-category">{{ category }}</li>
+          {% endfor %}
+        </ul>
+
+
+        <div class="hp-blog-share-buttons pull-right hp-blog-subtitle-item">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+          <a href="mailto:?Subject=Interesting blog article&amp;Body=I%20saw%20this%20and%20thought%20you%20would%20like%20it!%20 - {{ site.url }}{{ page.url }}">Email</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="row hp-footer">
+    <div class="col-xs-12">
+
+      <p class="text-center hp-footer-content">&copy; 2015, Harshad Paranjape</p>
+
+    </div>
+  </div>
+
+</div><!-- /.container -->

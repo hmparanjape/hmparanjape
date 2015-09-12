@@ -1,0 +1,9 @@
+{
+  "name": "harshadparanjapecom-min",
+  "version": "0.0.0",
+  "dependencies": {
+    "lightbox2": "~2.8.1",
+    "notifyjs": "~0.3.2",
+    "imager.js": "~0.5.0"
+  }
+}

@@ -1,0 +1,38 @@
+/* Globals */
+body {
+  font-weight: 200;
+}
+
+.hp-home h1,
+.hp-exhibit h1 {
+  font-size: $font-size-large;
+}
+
+/* Footer */
+.hp-footer-content {
+  padding: 2em;
+}
+
+.hp-footer-icon {
+  width: 2em;
+}
+
+.hp-blog-notification {
+  background-color: lighten($brand-tertiary-2, 3%);
+  border: none;
+  display: none;
+  color: $gray-dark;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 0;
+  z-index: 10000;
+}
+
+/* Small screen styles */
+@media (max-width: $screen-tablet) {
+  .hp-blog-notification {
+    margin-bottom: 5px;
+  }
+}

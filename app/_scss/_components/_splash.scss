@@ -1,0 +1,48 @@
+/* Splash */
+
+/* Desktop styles */
+.hp-splash-intro {
+  background-color: $gray-lighter;
+  padding: 2em 2em 1.75em 2em;
+}
+
+.hp-splash-intro p {
+  font-size: $font-size-large;
+}
+
+/* Moderate screen styles */
+@media (max-width: $screen-desktop) {
+  .hp-splash-intro {
+    padding: 1em;
+  }
+
+  .hp-splash-intro p {
+    font-size: $font-size-base;
+  }
+
+}
+
+/* Medium screen styles */
+@media (max-width: $screen-tablet) {
+  .hp-splash-intro {
+    padding: 2em;
+  }
+
+  .hp-splash-img {
+    margin: auto;
+    width: 60%;
+  }
+
+}
+
+/* Small screen styles */
+@media (max-width: $screen-phone) {
+  .hp-splash-intro {
+    padding: 2em;
+  }
+
+  .hp-splash-img {
+    margin: auto;
+    width: 70%;
+  }
+}

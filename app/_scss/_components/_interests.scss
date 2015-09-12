@@ -1,0 +1,39 @@
+/* Interests section styles */
+
+/* Desktop styles */
+.hp-interest-icon {
+  @extend .img-responsive;
+}
+
+.hp-interest-intro {
+  font-size: $font-size-large;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Moderate screen styles */
+@media (max-width: $screen-desktop) {
+
+  .hp-interest-intro
+  {
+    font-size: $font-size-base;
+  }
+
+  .hp-interest-icon {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+}
+
+/* Moderate screen styles */
+@media (max-width: $screen-phone) {
+  .hp-interest-icon {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+}

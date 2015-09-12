@@ -1,0 +1,33 @@
+.hp-thesis-movie-row {
+  background-color: $gray-lighter;
+  padding: 1em;
+}
+
+.hp-thesis p {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hp-thesis-movie-row {
+  margin-bottom: 2em;
+}
+
+.hp-thesis-movie-row h2 {
+  margin-bottom: 1em;
+}
+
+@media (max-width: $screen-tablet) {
+
+  .hp-thesis-movie-row {
+    margin: auto;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .hp-thesis-movie-row h2 {
+    font-size: 0.8 * $font-size-h2;
+  }
+
+}
