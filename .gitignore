@@ -37,6 +37,7 @@ app/_bower_components
 dist
 node_modules
 .tmp
+app/img/exhibit-a
 
 # Ignore for RVM users #
 .ruby-version

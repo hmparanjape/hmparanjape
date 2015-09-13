@@ -26,26 +26,13 @@ $('.hp-responsive-img').each(function() {
 
 });
 
-
-// Load imager.js ------------------------------------------------------------//
-// new Imager('.delayed-img-load',
-// {
-//   availableWidths: {
-//     300:  'x-small',
-//     450:  'small',
-//     600:  'medium'
-//   }
-// });
-
 // Trigger on page load ------------------------------------------------------//
 $(function() {
   // Responsive thumbnail replacement
   $('.hp-exhbit-thumb').each(function() {
 
     var imgLink = $(this).attr('data-src');
-    console.log(imgLink);
     var thumbParentWidth = $(this).parent().parent().width();
-    console.log(thumbParentWidth);
     var appropriateImageWidth = 'medium';
 
     if(thumbParentWidth <= 300) {
@@ -59,8 +46,6 @@ $(function() {
     var updatedImgLink = imgLink.replace(/{width}/g, appropriateImageWidth);
 
     $(this).attr('src', updatedImgLink);
-
-    console.log($(this).attr('src'));
 
   });
 
