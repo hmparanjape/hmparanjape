@@ -16,6 +16,66 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     // Configurable paths
+    responsive_images: {
+      exhibit_a: {
+        options: {
+          engine: 'im',
+          newFilesOnly: true,
+          sizes: [{
+            width: 400,
+            name: 'x-small',
+            quality: 70
+          },{
+            width: 800,
+            name: 'small',
+            quality: 70
+          },{
+            width: 1600,
+            name: "medium",
+            quality: 70
+          },{
+            width: 2400,
+            name: "large",
+            quality: 80
+          },{
+            width: 3600,
+            name: "x-large",
+            quality: 80
+          }]
+        },
+        files: [{
+          expand: true,
+          cwd: 'app/img/exhibit-a/source',
+          src: ['**.{jpg,png}'],
+          dest: 'app/img/exhibit-a/'
+        }]
+      },
+      exhibit_a_thumbs: {
+        options: {
+          engine: 'im',
+          newFilesOnly: true,
+          sizes: [{
+            width: 300,
+            name: 'x-small',
+            quality: 70
+          },{
+            width: 450,
+            name: 'small',
+            quality: 70
+          },{
+            width: 600,
+            name: 'medium',
+            quality: 70
+          }]
+        },
+        files: [{
+          expand: true,
+          cwd: 'app/img/exhibit-a/source/thumbs/',
+          src: ['**.{jpg,png}'],
+          dest: 'app/img/exhibit-a/'
+        }]
+      }
+    },
     yeoman: {
       app: 'app',
       dist: 'dist'
@@ -243,6 +303,9 @@ module.exports = function (grunt) {
             // Usemin moves CSS and javascript inside of Usemin blocks.
             // Copy moves asset files and directories.
             'img/**/*',
+            // Exclude responsive image sources
+            '!img/exhibit-a/bak/**',
+            '!img/exhibit-a/source/**',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}',
@@ -398,6 +461,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'responsive_images',
     'clean',
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
