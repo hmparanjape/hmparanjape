@@ -69,3 +69,11 @@ $(function() {
         $(this).removeClass('hp-exhbit-thumb-transition');
     });
 });
+
+$('#hp-brew-random-beer').click(function() {
+  $('.hp-brew-svg-container-spinner').show();
+  $.get("http://api.harshadparanjape.com/brewpf" + "?cachebuster=" + new Date().getTime(), function(data) {
+    $('.hp-brew-svg-container-spinner').hide();
+    $('#hp-brew-svg-container').html(data);
+  }, 'text');
+});
