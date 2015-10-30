@@ -3,7 +3,7 @@ layout: post
 title:  "An Easy Preloader GIF Making Workflow in Inkscape and Imagemagick"
 date:   2015-08-08 12:17:30
 root: ../../..
-categories: design how-to new
+categories: design how-to
 ---
 
 ![Vector sketch for preloader in Inkscape]({{ site.url }}/img/hp-blog-splash-spinner.png "Vector sketch for a preloader GIF in Inkscape")

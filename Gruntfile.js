@@ -66,6 +66,10 @@ module.exports = function (grunt) {
             width: 600,
             name: 'medium',
             quality: 70
+          },{
+            width: 1200,
+            name: 'large',
+            quality: 80
           }]
         },
         files: [{

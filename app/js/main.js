@@ -1,53 +1,7 @@
 /*global $:false */
 
-// Responsive image script
-var windowWidth = $(window).width();
-
-$('.hp-responsive-img').each(function() {
-
-  var imgLink = $(this).attr('href');
-  var appropriateImageWidth = 'large';
-
-  if(windowWidth <= 400) {
-    appropriateImageWidth = 'x-small';
-  } else if (windowWidth > 400 && windowWidth <= 800) {
-    appropriateImageWidth = 'small';
-  } else if (windowWidth > 800 && windowWidth <= 1600) {
-    appropriateImageWidth = 'medium';
-  } else if (windowWidth > 1600 && windowWidth <= 2400) {
-    appropriateImageWidth = 'large';
-  } else {
-    appropriateImageWidth = 'x-large';
-  }
-
-  var updatedImgLink = imgLink.replace(/{width}/g, appropriateImageWidth);
-
-  $(this).attr('href', updatedImgLink);
-
-});
-
 // Trigger on page load ------------------------------------------------------//
 $(function() {
-  // Responsive thumbnail replacement
-  $('.hp-exhbit-thumb').each(function() {
-
-    var imgLink = $(this).attr('data-src');
-    var thumbParentWidth = $(this).parent().parent().width();
-    var appropriateImageWidth = 'medium';
-
-    if(thumbParentWidth <= 300) {
-      appropriateImageWidth = 'x-small';
-    } else if (thumbParentWidth > 300 && thumbParentWidth <= 450) {
-      appropriateImageWidth = 'small';
-    } else {
-      appropriateImageWidth = 'medium';
-    }
-
-    var updatedImgLink = imgLink.replace(/{width}/g, appropriateImageWidth);
-
-    $(this).attr('src', updatedImgLink);
-
-  });
 
   if($(window).width() > 768){
     // Equal height for div/image in spash
@@ -68,8 +22,67 @@ $(function() {
     }, function() {
         $(this).removeClass('hp-exhbit-thumb-transition');
     });
+
+  // Render Mapbox maps
+  if ( $( "#hp-map-rmnp" ).length ) {
+    L.mapbox.accessToken = 'pk.eyJ1IjoiaG1wYXJhbmphcGUiLCJhIjoiY2lnOHJ3dGt2MHE5d3RobTA4bG1kNzcwOSJ9.a-n4ERL-LSgzsQv0RBbMfQ';
+    $.getJSON($( "#hp-map-rmnp" ).attr('data-geojson'), function(jsondata){
+      var map_1 = L.mapbox.map('hp-map-rmnp', 'mapbox.streets').setView([40.35, -105.7], 11);
+      var myLayer = L.mapbox.featureLayer().addTo(map_1);
+
+      myLayer.on('layeradd', function(e) {
+        var marker = e.layer, feature = marker.feature;
+        // Create custom popup content
+        var popupContent =  '<p>' + feature.properties.Name + '<\/p>';
+        // http://leafletjs.com/reference.html#popup
+        marker.bindPopup(popupContent,{
+            closeButton: false,
+            minWidth: 220
+        });
+      });
+
+      myLayer.setGeoJSON(jsondata);
+
+      if($(window).width() < 768){
+        // Disable drag and zoom handlers.
+        map_1.scrollWheelZoom.disable();
+      }
+
+    });
+
+  }
+
+  if ( $( "#hp-map-colorado-misc" ).length ) {
+    L.mapbox.accessToken = 'pk.eyJ1IjoiaG1wYXJhbmphcGUiLCJhIjoiY2lnOHJ3dGt2MHE5d3RobTA4bG1kNzcwOSJ9.a-n4ERL-LSgzsQv0RBbMfQ';
+    $.getJSON($( "#hp-map-colorado-misc" ).attr('data-geojson'), function(jsondata){
+      var map_2 = L.mapbox.map('hp-map-colorado-misc', 'mapbox.streets')
+        .setView([38.5, -106.0], 8);
+        var myLayer = L.mapbox.featureLayer().addTo(map_2);
+
+        myLayer.on('layeradd', function(e) {
+          var marker = e.layer, feature = marker.feature;
+          // Create custom popup content
+          var popupContent =  '<p>' + feature.properties.Name + '<\/p>';
+          // http://leafletjs.com/reference.html#popup
+          marker.bindPopup(popupContent,{
+              closeButton: false,
+              minWidth: 220
+          });
+        });
+
+        myLayer.setGeoJSON(jsondata);
+
+      if($(window).width() < 768){
+        // Disable drag and zoom handlers.
+        map_2.scrollWheelZoom.disable();
+      }
+    });
+
+  }
+
 });
 
+// BrewPF app AJAX request. Need to move this elsewhere. ---------------------//
 $('#hp-brew-random-beer').click(function() {
   $('.hp-brew-svg-container-spinner').show();
   $.get("http://api.harshadparanjape.com/brewpf" + "?cachebuster=" + new Date().getTime(), function(data) {

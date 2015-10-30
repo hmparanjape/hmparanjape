@@ -1,0 +1,291 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.hp-pictorial-navbar {
+  z-index: 1000;
+}
+
+.hp-pictorial-navbar .navbar-brand {
+  color: lighten($gray-base, 80%);;
+  text-shadow: 0px 0px 10px rgba(0,0,0,1);
+  a {
+    color: lighten($gray-base, 80%);
+  }
+}
+
+.hp-pictorial {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-width: 2400px;
+  margin: auto;
+  margin-top: -80px;
+}
+
+.hp-pictorial-post-heading {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hp-pictorial-post-heading {
+  text-align: center;
+}
+
+.hp-pictorial-post-heading > h1 {
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0,0,0,1);
+  font-size: $font-size-h1;
+  font-weight: 300;
+}
+
+@media (min-width: $screen-tablet) {
+
+  .hp-pictorial-post-heading > h1 {
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+    font-size: $font-size-h1 * 1.2;
+    font-weight: 300;
+  }
+
+}
+
+.hp-pictorial-post-lead {
+  margin-top: 1em;
+}
+
+@media (min-width: $screen-tablet) {
+
+  .hp-pictorial-post-lead {
+    margin-top: 3em;
+  }
+
+}
+
+.hp-pictorial-post-lead p {
+  font-size: 22px;
+  color: lighten($gray-base, 70%);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.hp-pictorial-post p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hp-pictorial-post table {
+  margin-top: 2em;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hp-pictorial-post ul {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hp-pictorial-post table tr:nth-child(even) {
+  background-color: $gray-lighter;
+}
+
+.hp-pictorial-post table th {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.hp-pictorial-post table td {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media (min-width: $screen-tablet) {
+  .hp-pictorial-post table td {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+}
+
+.hp-pictorial-section-arrow {
+  position: relative;
+}
+
+.hp-pictorial-arrow-container {
+  position:absolute;
+  z-index:1000;
+  left:50%;
+  top:-10em;
+  margin-left:-4em;
+  width:8em;
+  height:8em;
+  border-radius:50%;
+  font-size:0.5em;
+  display:block;
+  border: 2px solid white;
+}
+
+@media (min-width: $screen-tablet) {
+
+  .hp-pictorial-arrow-container {
+    top:-15em;
+  }
+
+}
+
+.hp-pictorial-arrow {
+  margin: auto;
+  margin-top: 1.5em;
+  width: 3em;
+  height: 3em;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.hp-pictorial-arrow:hover {
+  border-color: $gray-light;
+}
+
+.hp-pictorial-post {
+  margin-top: 4em;
+}
+
+.hp-pictorial-post > .row {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.hp-pictorial-post {
+  div[class^="col"]{
+    padding-left:3px;
+    padding-right:3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    }
+}
+
+.hp-pictorial-post .row .hp-pictorial-text-col {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media (min-width: $screen-tablet) {
+
+  .hp-pictorial-post .row .hp-pictorial-text-col {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+}
+
+.hp-pictorial-post p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hp-pictorial-post h1 {
+  margin-bottom: 1.5em;
+  font-size: 0.7 * $font-size-h1;
+}
+
+@media (min-width: $screen-tablet) {
+
+  .hp-pictorial-post h1 {
+    font-size: $font-size-h1;
+  }
+
+}
+
+.hp-pictorial-icon {
+  height: 0.9 * $font-size-h1;
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
+
+@media (min-width: $screen-tablet) {
+
+  .hp-pictorial-icon {
+    height: 1.2 * $font-size-h1;
+    vertical-align: middle;
+    margin-left: 0.5em;
+  }
+
+}
+
+.hp-pictorial-inline-icon-left {
+  float: left;
+  width: 5em;
+  margin-right: 2em;
+  margin-top: 0.5em;
+}
+
+.hp-pictorial-map-responsive {
+  width: 100%;
+  height: 480px;
+}
+
+/* Hack to get lazyloaded images full-width in Safari */
+img.img-responsive.lazyautosizes.lazyloaded {
+  width: 100%;
+}
+
+/* Slide-in caption idea from https://css-tricks.com/examples/SlideinCaptions/ */
+.hp-img-with-caption {
+  position: relative;
+  overflow: hidden;
+}
+
+.hp-img-caption {
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+  width: 100%;
+  background: black;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition:    all 0.8s ease;
+  -o-transition:      all 0.8s ease;
+}
+
+.hp-img-with-caption:hover .hp-img-caption {
+  opacity: 0.75;
+  bottom: 0;
+}
+
+.hp-img-with-caption:before {
+  content: "?";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: 300;
+  background: black;
+  background: rgba(255,255,255,0.75);
+  text-shadow: 0 0 5px white;
+  color: black;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius:    12px;
+  border-radius:         12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  -moz-transition: all 0.6s ease;
+  opacity: 0.75;
+}
+.hp-img-with-caption:hover:before {
+  opacity: 0;
+}
+
+.hp-img-caption p {
+  font-size: $font-size-base;
+  font-weight: 300;
+}

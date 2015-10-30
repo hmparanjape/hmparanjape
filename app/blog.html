@@ -42,7 +42,14 @@ root: .
 
       </div>
 
-      {{ post.excerpt }}
+      {% if post.categories contains 'photo-story' %}
+        <img src="{{ page.root }}/{{ post.splash }}" class="img-responsive" alt="Blog post splash" />
+        <p>
+          {{ post.lead }}
+        </p>
+      {% else %}
+        {{ post.excerpt }}
+      {% endif %}
 
       <p><a href="{{ page.root }}/{{ post.url }}">Read more &rarr;</a></p>
 

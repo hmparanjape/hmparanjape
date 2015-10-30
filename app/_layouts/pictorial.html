@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+ <div class="navbar hp-pictorial-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <span class="navbar-brand"><a href="{{page.root}}/">Harshad Paranjape</a> | Blog</span>
+    </div>
+  </div>
+</div>
+
+<!-- Container -->
+<div class="container-fluid hp-pictorial">
+
+  <div class="row hp-pictorial-splash-container">
+    <div class="col-md-8 col-md-offset-2 hp-pictorial-post-heading text-center">
+      <h1>{{ page.title }}</h1>
+
+      <div class="hp-pictorial-post-lead text-center">
+        <p>
+          {{ page.lead }}
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row hp-pictorial-section-arrow">
+    <a class="hp-pictorial-arrow-container" href="#hp-pictorial-post">
+      <div class="hp-pictorial-arrow"></div>
+    </a>
+  </div>
+
+  <div class="hp-pictorial-post" id="hp-pictorial-post">
+
+    {{ content }}
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 hp-blog-post-tail">
+
+      <div class="hp-blog-subtitle">
+
+        <ul class="list-inline hp-blog-subtitle-item">
+          {% for category in page.categories %}
+          <li class="hp-blog-category">{{ category }}</li>
+          {% endfor %}
+        </ul>
+
+
+        <div class="hp-blog-share-buttons pull-right hp-blog-subtitle-item">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+          <a href="mailto:?Subject=Interesting blog article&amp;Body=I%20saw%20this%20and%20thought%20you%20would%20like%20it!%20 - {{ site.url }}{{ page.url }}">Email</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="row hp-footer">
+    <div class="col-xs-12">
+
+      <p class="text-center hp-footer-content">&copy; 2015, Harshad Paranjape</p>
+
+    </div>
+  </div>
+
+</div><!-- /.container -->
