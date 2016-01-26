@@ -1,0 +1,321 @@
+---
+layout: pictorial
+title:  "Moving Diffraction Patterns"
+splash: "/img/exhibit-a/moving_splash-medium.jpg"
+lead: "These are abstract patterns inspired by high energy X-ray diffraction images. Here I present a short narrative of how I developed these over the past six months."
+style: |
+  <style type="text/css">
+    .hp-pictorial-post-lead {
+      text-shadow: 0px 0px 5px rgba(0,0,0,1);
+    }
+    .hp-pictorial-post-heading {
+      margin-top: -4em;
+    }
+    .hp-pictorial-splash-container {
+      background-image: url('../../../img/exhibit-a/moving_splash-small.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #464646;
+      height: 100%;
+      min-height: 100%;
+      z-index: -5;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+    @media (min-width: 992px) {
+      .hp-pictorial-splash-container {
+        background-image: url('../../../img/exhibit-a/moving_splash-medium.jpg');
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .hp-pictorial-splash-container {
+        background-image: url('../../../img/exhibit-a/moving_splash-large.jpg');
+      }
+    }
+  </style>
+date:   2016-01-21 21:20:00
+root: ../../..
+categories: new design photo-story
+excerpt: A study in smooth curves and vibrant colors by Harshad Paranjape.
+---
+
+<!--more-->
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-1 hp-pictorial-text-col">
+    <h1>Journey to the Center of the... Metal</h1>
+
+    <p>
+      Most of us associate X-rays with hospitals and airports. But just like they
+      can reveal bones inside our body and objects inside a suitcase, X-rays
+      can be used to reveal the internal structure of a variety of materials.
+      When metals for example are bombarded with a beam of powerful X-rays,
+      we can observe that the metals are made up of tiny crystals called grains.
+      The knowledge of the internal structure of the metals and how that structure
+      changes during processing and use of the metallic objects can help us
+      design better, stronger and lighter materials. One of the many research technique
+      that uses X-rays to probe metals is called high energy diffraction
+      microscopy (HEDM). A typical setup for an HEDM experiment is shown in the
+      figure on the right. A metallic sample sits in the center, a focussed
+      beam of X-rays comes from the right and a square detector on the left
+      records the X-rays after they have interacted with the sample.
+    </p>
+
+  </div>
+
+  <div class="col-md-6 col-md-offset-1">
+
+    <div class="hp-img-with-caption">
+      <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/moving_1-x-small.jpg"
+                          data-srcset="{{ page.root }}/img/exhibit-a/moving_1-small.jpg 800w,
+                                       {{ page.root }}/img/exhibit-a/moving_1-medium.jpg 1600w,
+                                       {{ page.root }}/img/exhibit-a/moving_1-large.jpg 2400w"
+        class="img-responsive lazyload" alt="Photo of a typical high energy X-ray diffraction setup." />
+      <div class="hp-img-caption">
+        <p>A typical experimental setup used to perform high energy X-ray diffraction experiments to reveal the internal structure of metals.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-6">
+
+    <div class="hp-img-with-caption">
+      <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/moving_2-x-small.png"
+                          data-srcset="{{ page.root }}/img/exhibit-a/moving_2-small.png 800w,
+                                       {{ page.root }}/img/exhibit-a/moving_2-medium.png 1600w,
+                                       {{ page.root }}/img/exhibit-a/moving_2-large.png 2400w"
+        class="img-responsive lazyload" alt="A far-field X-ray pattern from a metallic sample." />
+      <div class="hp-img-caption">
+        <p>An image obtained when a metal is bombarded with a focussed beam of high energy X-rays.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-4 col-md-offset-1 hp-pictorial-text-col">
+    <h1>The Spots</h1>
+
+    <p>
+      When X-rays interact with a metal, the atoms <a href="https://en.wikipedia.org/wiki/X-ray_crystallography">scatter those rays</a> in
+      different directions. If the detector recording the scattered X-rays is placed
+      around a meter away from the sample, we get a pattern comprising of spots
+      as shown on the left. Each spot corresponds to a tiny crystal in the
+      metallic sample. One day, while I was looking at one such pattern, I
+      thought what if I colored each spot differently? That would look pretty cool.
+      It did, but there was a lot of empty space between the spots which
+      kind of took away the vibrance of the colorful spots.
+    </p>
+
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-1 hp-pictorial-text-col">
+    <h1>What if we Moved the Detector at Will?</h1>
+
+    <p>
+      If the detector is moved while acquiring the X-ray pattern, then the spots
+      will turn into streaks or even smooth curves. This is schematically
+      shown in the animation on the right. You wouldn't want to ruin an
+      experiment by doing this though. So I simulated an X-ray diffraction
+      pattern while the detector was rotating. Some of such patterns are
+      shown below. At first I just recorded the position of the spots
+      in the plane of the detector. So these patterns are 2D. Still I like them
+      a lot.
+    </p>
+
+  </div>
+
+  <div class="col-md-6 col-md-offset-1">
+
+    <div class="hp-img-with-caption">
+      <img src="{{ page.root }}/img/moving_3.gif"
+        class="img-responsive text-center" alt="Illustration showing the detector movement." />
+      <div class="hp-img-caption">
+        <p>An illustration showing the movement of the detector and resulting patterns obtained from the colorful spots.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-6">
+
+    <div class="hp-img-with-caption">
+      <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/moving_4-x-small.jpg"
+                          data-srcset="{{ page.root }}/img/exhibit-a/moving_4-small.jpg 800w,
+                                       {{ page.root }}/img/exhibit-a/moving_4-medium.jpg 1600w,
+                                       {{ page.root }}/img/exhibit-a/moving_4-large.jpg 2400w"
+        class="img-responsive lazyload" alt="A 2D pattern obtained by moving and rotating the detector." />
+      <div class="hp-img-caption">
+        <p>A 2D pattern obtained by moving the detector along the beam direction and rotating it along the beam axis.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-6">
+
+    <div class="hp-img-with-caption">
+      <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/moving_5-x-small.jpg"
+                          data-srcset="{{ page.root }}/img/exhibit-a/moving_5-small.jpg 800w,
+                                       {{ page.root }}/img/exhibit-a/moving_5-medium.jpg 1600w,
+                                       {{ page.root }}/img/exhibit-a/moving_5-large.jpg 2400w"
+        class="img-responsive lazyload" alt="A collection of 2D patterns generated by moving the detector in various ways." />
+      <div class="hp-img-caption">
+        <p>A collection of 2D patterns generated by moving the detector in various ways.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 hp-pictorial-text-col">
+    <h1>A New Dimension</h1>
+
+    <p>
+      Turning the 2D patterns into 3D is pretty straight forward. Imagine we
+      move the detector along the beam direction and then record the position
+      of each spot in full 3D. This gives us a lot more freedom is creating some
+      very interesting patterns. At first, I exported the 3D patterns created
+      in MATLAB to the <a href="https://en.wikipedia.org/wiki/VRML">VRML format</a>
+      and then uploaded them to <a href="https://sketchfab.com/">Sketchfab</a>.
+      One such model is shown below. But then I started rendering the patterns
+      in <a href="https://www.blender.org/">Blender</a>.
+    </p>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-6 col-md-offset-3">
+
+    <div class="embed-responsive embed-responsive-4by3">
+      <iframe class="embed-responsive-item" src="https://sketchfab.com/models/291ef0d253dc4e7d9bc1c03dea20a0ec/embed?camera=0"
+              allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="">
+      </iframe>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-6 col-md-offset-3">
+
+    <div class="hp-img-with-caption">
+      <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/moving_7-x-small.jpg"
+                          data-srcset="{{ page.root }}/img/exhibit-a/moving_7-small.jpg 800w,
+                                       {{ page.root }}/img/exhibit-a/moving_7-medium.jpg 1600w,
+                                       {{ page.root }}/img/exhibit-a/moving_7-large.jpg 2400w"
+        class="img-responsive lazyload" alt="A 3D pattern generated using Matlab, Python and Blender."
+        style="margin-left: auto; margin-right: auto" />
+      <div class="hp-img-caption">
+        <p>A 3D pattern generated using Matlab, Python and Blender. I used the Cycles render engine in Blender.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-6">
+
+    <div class="hp-img-with-caption">
+      <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/moving_8-x-small.jpg"
+                          data-srcset="{{ page.root }}/img/exhibit-a/moving_8-small.jpg 800w,
+                                       {{ page.root }}/img/exhibit-a/moving_8-medium.jpg 1600w,
+                                       {{ page.root }}/img/exhibit-a/moving_8-large.jpg 2400w"
+        class="img-responsive lazyload" alt="A 3D pattern generated using Matlab, Python and Blender." />
+      <div class="hp-img-caption">
+        <p>A 3D pattern generated using Matlab, Python and Blender. I used the Cycles render engine in Blender.
+        I used a shot of milky way that I had taken last year as the background.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-6">
+
+    <div class="hp-img-with-caption">
+      <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/moving_9-x-small.jpg"
+                          data-srcset="{{ page.root }}/img/exhibit-a/moving_9-small.jpg 800w,
+                                       {{ page.root }}/img/exhibit-a/moving_9-medium.jpg 1600w,
+                                       {{ page.root }}/img/exhibit-a/moving_9-large.jpg 2400w"
+        class="img-responsive lazyload" alt="A 3D pattern generated using Matlab, Python and Blender." />
+      <div class="hp-img-caption">
+        <p>A 3D pattern generated using Matlab, Python and Blender. I used the Cycles render engine in Blender.
+        I used a shot of milky way that I had taken last year as the background.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 hp-pictorial-text-col">
+    <h1>Blending it all Together</h1>
+
+    <p>
+      I like the Blender approach better because of the ability it gives to create
+      more complex compositions. And another aspect is that you can use various props and materials
+      contributed online by the vast Blender community. This gives you tremendous creative freedom.
+      I used the Cycles rendering engine in Blender that allowes creating some
+      fantastic effects like shallow depth of field, bokeh, realistic textures
+      and lighting.
+    </p>
+
+    <p>
+      I liked the renders so much, I printed one of them and framed it! Now
+      I am thinking about what could be the next project on these lines.
+      Perhaps some SVG/CSS based animations with abstract patterns like these.
+    </p>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-10 col-md-offset-1">
+
+    <div class="hp-img-with-caption">
+      <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/moving_10-x-small.jpg"
+                          data-srcset="{{ page.root }}/img/exhibit-a/moving_10-small.jpg 800w,
+                                       {{ page.root }}/img/exhibit-a/moving_10-medium.jpg 1600w,
+                                       {{ page.root }}/img/exhibit-a/moving_10-large.jpg 2400w"
+        class="img-responsive lazyload" alt="A 3D pattern generated using Matlab, Python and Blender." />
+      <div class="hp-img-caption">
+        <p>
+          A composition rendered in Blender with shallow depth of field and a few props.
+          <a href="http://blendermada.com/materials/detail/26-cracked-stone/">Cracked stone material</a> courtesy of Palaes
+          and <a href="http://blendermada.com/materials/detail/27-concrete-fine/">fine concrete</a>
+          material courtesy of tuomope at Blendermada (Released under CC-0 license).
+          <a href=" http://www.blendswap.com/blends/view/80840">Decorative vases</a> courtesy of Timbazy
+          (Released under CC-BY license).
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

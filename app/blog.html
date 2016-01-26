@@ -17,7 +17,7 @@ root: .
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav pull-right">
-        <li><a href="{{page.root}}/exhibit-a.html">Exhibit<span class="hp-exhibit-slash">/</span>A</a></li>
+        <li><a href="{{page.root}}/research.html">Research</a></li>
         <li><a href="{{page.root}}/blog.html">Blog</a></li>
         <li><a href="mailto:hi@hm.paranja.pe"><span class="hp-nav-email">Email</span></a></li>
       </ul>
@@ -29,7 +29,7 @@ root: .
 <div class="container hp-blog">
 
   {% for post in site.posts %}
-  <div class="row">
+  <div class="row hp-blog-row">
     <div class="col-md-10 hp-blog-post-excerpt">
 
       <a href="{{ page.root }}/{{ post.url }}"><h1>{{ post.title }}</h1></a>

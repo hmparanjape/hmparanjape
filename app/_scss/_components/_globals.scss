@@ -1,11 +1,22 @@
 /* Globals */
 body {
-  font-weight: 200;
+  font-weight: 300;
+}
+
+b {
+  font-weight: 400;
 }
 
 .hp-home h1,
-.hp-exhibit h1 {
+.hp-exhibit h1,
+.hp-research h1 {
   font-size: $font-size-large;
+}
+
+.hp-home h2,
+.hp-exhibit h2,
+.hp-research h2 {
+  font-size: $font-size-large / 1.2;
 }
 
 /* Footer */

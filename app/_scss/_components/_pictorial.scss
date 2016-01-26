@@ -160,6 +160,11 @@ html, body {
   margin-bottom: 4em;
 }
 
+.hp-pictorial-big-heading {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
 .hp-pictorial-post {
   div[class^="col"]{
     padding-left:3px;
@@ -176,7 +181,8 @@ html, body {
 
 @media (min-width: $screen-tablet) {
 
-  .hp-pictorial-post .row .hp-pictorial-text-col {
+//  .hp-pictorial-post .row .hp-pictorial-text-col {
+  .hp-pictorial-post .row {
     padding-left: 0em;
     padding-right: 0em;
   }
@@ -288,4 +294,12 @@ img.img-responsive.lazyautosizes.lazyloaded {
 .hp-img-caption p {
   font-size: $font-size-base;
   font-weight: 300;
+}
+
+.hp-img-caption p a {
+  color: lighten($brand-primary, 55%);
+}
+
+.hp-pictorial-footer-links-div {
+  background-color: $gray-lighter;
 }

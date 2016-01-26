@@ -148,8 +148,9 @@ ErrorDocument 404 /404.html
 
     # Make SVGZ fonts work on iPad:
     # https://twitter.com/FontSquirrel/status/14855840545
-    AddType     image/svg+xml                           svgz
+    AddType     image/svg+xml                           svg svgz
     AddEncoding gzip                                    svgz
+    AddOutputFilter DEFLATE svg
 
   # Other
     AddType application/octet-stream                    safariextz
@@ -649,6 +650,13 @@ FileETag None
 # ------------------------------------------------------------------------------
 # | Redirects                                                                  |
 # ------------------------------------------------------------------------------
-Redirect 301 /research/ /index.html
+Redirect 301 /research/ /research.html
 Redirect 301 /bio/ /index.html
 Redirect 301 /thesis/ /thesis.html
+Redirect 301 /colorado /2015/10/21/colorado-photo.html
+Redirect 301 /arches /2015/11/21/wyoming-utah-photo.html
+Redirect 301 /zion /2016/01/01/arizona-utah-photo.html
+Redirect 301 /sf /2016/01/07/san-francisco-photo.html
+Redirect 301 /patterns /2016/01/21/moving-diffraction.html
+Redirect 301 /123 http://onetwothree.harshadparanjape.com
+Redirect 301 /brewpf http://brewpf.harshadparanjape.com

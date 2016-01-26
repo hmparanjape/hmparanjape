@@ -2,6 +2,7 @@
 layout: default
 title: Harshad Paranjape | Home
 root: .
+excerpt: Personal website of Harshad Paranjape showcasing research and blog.
 ---
 <div class="alert alert-info hp-blog-notification" role="alert">
 	<button type="button" class="close" data-dismiss="alert">×</button>
@@ -23,7 +24,7 @@ root: .
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav pull-right">
-        <li><a href="{{page.root}}/exhibit-a.html">Exhibit<span class="hp-exhibit-slash">/</span>A</a></li>
+        <li><a href="{{page.root}}/research.html">Research</a></li>
         <li><a href="{{page.root}}/blog.html">Blog</a></li>
         <li><a href="mailto:hi@hm.paranja.pe"><span class="hp-nav-email">Email</span></a></li>
       </ul>
@@ -46,19 +47,24 @@ root: .
       </p>
       <p>
         This <a href="blog.html">blog</a> showcases my
-        <a href="#research">research</a> and other <a href="exhibit-a.html">interests</a>.
+        <a href="research.html">research</a> and other interests.
       </p>
     </div>
     <div class="col-md-4 hp-splash-img-container">
-      <img src="img/hp-splash-photo_2.jpg" alt="Photograph of Harshad Paranjape"
-      class="hp-splash-eq-h hp-splash-img img-responsive" />
+			<img data-sizes="auto" data-src="{{ page.root }}/img/hp-splash-photo-x-small.jpg"
+        data-srcset="{{ page.root }}/img/hp-splash-photo-x-small.jpg 300w,
+										 {{ page.root }}/img/hp-splash-photo-small.jpg 400w,
+										 {{ page.root }}/img/hp-splash-photo-medium.jpg 570w"
+        class="hp-splash-eq-h hp-splash-img lazyload" alt="Photograph of Harshad Paranjape" />
     </div>
   </div>
 
   <!-- Research -->
   <div class="row hp-research">
     <div class="col-xs-12">
-      <h1>Research</h1>
+      <h1>Research
+				<a class="hp-research-prompt pull-right btn btn-default" href="research.html">View Outline</a>
+			</h1>
       <div class="row">
         <div class="col-md-4">
 
@@ -134,25 +140,50 @@ root: .
       <div class="row">
 
         <div class="col-md-4">
-					<!-- <div class="delayed-image-load" data-class="img-responsive hp-interest-icon" data-src="img/hp-interest-photo_{width}{pixel_ratio}.jpg" data-alt="Harshad photography sample"></div> -->
-          <img src="img/hp-interest-photo_small.jpg" alt="Harshad photography sample" class="img-responsive hp-interest-icon" />
+					<img data-sizes="auto" data-src="{{ page.root }}/img/hp-interest-photo-x-small.jpg"
+		        data-srcset="{{ page.root }}/img/hp-interest-photo-x-small.jpg 300w,
+												 {{ page.root }}/img/hp-interest-photo-small.jpg 450w,
+												 {{ page.root }}/img/hp-interest-photo-medium.jpg 600w"
+		        class="img-responsive hp-interest-icon lazyload" alt="Harshad photography sample" />
         </div>
 
         <div class="col-md-4">
-          <img src="img/hp-interest-md_small.png" alt="Harshad photography sample" class="img-responsive hp-interest-icon" />
+
+					<img data-sizes="auto" data-src="{{ page.root }}/img/hp-interest-md-x-small.png"
+		        data-srcset="{{ page.root }}/img/hp-interest-md-x-small.png 300w,
+												 {{ page.root }}/img/hp-interest-md-small.png 450w,
+												 {{ page.root }}/img/hp-interest-md-medium.png 600w"
+		        class="img-responsive hp-interest-icon lazyload" alt="Harshad digital art sample" />
         </div>
 
         <div class="col-md-4">
-          <img src="img/hp-interest-paint_small.jpg" alt="Harshad photography sample" class="img-responsive hp-interest-icon" />
+
+					<img data-sizes="auto" data-src="{{ page.root }}/img/hp-interest-paint-x-small.jpg"
+		        data-srcset="{{ page.root }}/img/hp-interest-paint-x-small.jpg 300w,
+												 {{ page.root }}/img/hp-interest-paint-small.jpg 450w,
+												 {{ page.root }}/img/hp-interest-paint-medium.jpg 600w"
+		        class="img-responsive hp-interest-icon lazyload" alt="Harshad painting sample" />
         </div>
 
       </div>
 
       <p class="hp-interest-intro">
         I enjoy landscape photography, graphic and web design, painting and carpentry.
-        I am interested in the modern trends in design. <a href="exhibit-a.html">Exhibit<span class="hp-exhibit-slash">/</span>A</a>
-        showcases samples from my recent projects.
+        I often <a href="exhibit-a.html">blog</a> about my projects.
       </P>
+
+			<p class="hp-interest-intro">
+        Recent blog posts:
+      </P>
+
+			<ul class="hp-interests-blog-list">
+				{% for post in site.posts %}
+					{% if post.categories contains 'new' %}
+					<li class="hp-interests-blog-list-item"><a href="{{ page.root }}/{{ post.url }}">{{ post.title }}</a></li>
+					{% endif %}
+				{% endfor %}
+				<li class="hp-interests-blog-list-item"><a href="blog.html">And more &hellip;</a></li>
+			</ul>
   </div>
 
   <!-- Footer -->

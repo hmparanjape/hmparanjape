@@ -3,13 +3,17 @@
 # 2. config.build.yml
 # 3. config.yml
 
-name: harshadparanjape.com_min
-description: Personal website of Harshad Paranjape
+name: harshadparanjape.com
+description: Personal website of Harshad Paranjape with blog 
 author:
   name: Harshad Paranjape
   email: contact@harshadparanjape.com
-url: http://harshadparanjape.com/
-#url: http://localhost/harshadparanjape.com/dist
+  twitter: hmparanjape
+#url: http://www.harshadparanjape.com
+url: http://localhost/harshadparanjape.com/dist
+baseurl: ''
+icon: favicon.ico
+locale: en_US
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
@@ -37,3 +41,6 @@ excerpt_separator: <!--more-->
 
 # 500px photo embed
 500px_consumer_key_file: 500px_consumer_key
+
+gems:
+  - jekyll-feed

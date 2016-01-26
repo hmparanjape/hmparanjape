@@ -2,14 +2,15 @@
 
 /* Desktop styles */
 .hp-contact {
-  background-color: $gray-lighter;
+  //background-color: $gray-lighter;
 }
 
 .hp-bio {
   margin-top: 2em;
 }
 
-.hp-cv-prompt {
+.hp-cv-prompt,
+.hp-research-prompt {
   color: black;
   text-align: center;
   background: darken($gray-lighter, 10%);

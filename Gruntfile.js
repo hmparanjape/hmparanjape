@@ -263,6 +263,20 @@ module.exports = function (grunt) {
     },
     // Usemin adds files to concat
     concat: {},
+
+    uncss: {
+      options: {
+        htmlroot: "<%= yeoman.dist %>",
+        stylesheets: ["/css/main.css"],
+        ignore: ['#lightbox', '.lightbox', '#lightboxOverlay', '.lightboxOverlay',
+                 /lb\-[a-z]*/i, /nav[a-z]*/i, /collaps[a-z]*/i, /open+/,
+                 /hp+/, '.img.img-responsive.lazyautosizes.lazyloaded']
+      },
+      dist: {
+        src: "<%= yeoman.dist %>/**/*.html",
+        dest: "dist/css/main.css"
+      }
+    },
     // Usemin adds files to uglify
     uglify: {},
     // Usemin adds files to cssmin
@@ -479,7 +493,8 @@ module.exports = function (grunt) {
 //    'imagemin',
 //    'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+//    'uncss'
     ]);
 
   grunt.registerTask('deploy', [

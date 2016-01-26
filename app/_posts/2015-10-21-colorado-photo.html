@@ -18,35 +18,15 @@ style: |
       -moz-transform-style: preserve-3d;
       transform-style: preserve-3d;
     }
-    @media (min-width: $screen-tablet) {
+    @media (min-width: 992px) {
       .hp-pictorial-splash-container {
         background-image: url('../../../img/exhibit-a/hp-photo-mt-evans-medium.jpg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #464646;
-        height: 100%;
-        min-height: 100%;
-        z-index: -5;
-        -webkit-transform-style: preserve-3d;
-        -moz-transform-style: preserve-3d;
-        transform-style: preserve-3d;
       }
     }
 
-    @media (min-width: $screen-desktop) {
+    @media (min-width: 1200px) {
       .hp-pictorial-splash-container {
         background-image: url('../../../img/exhibit-a/hp-photo-mt-evans-large.jpg');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #464646;
-        height: 100%;
-        min-height: 100%;
-        z-index: -5;
-        -webkit-transform-style: preserve-3d;
-        -moz-transform-style: preserve-3d;
-        transform-style: preserve-3d;
       }
     }
   </style>
@@ -54,7 +34,8 @@ style: |
   <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
 date:   2015-10-21 10:00:00
 root: ../../..
-categories: photography photo-story new
+categories: photography photo-story
+excerpt: Photography in Colorado by Harshad Paranjape.
 ---
 
 <!--more-->
@@ -156,7 +137,7 @@ categories: photography photo-story new
 
     <div class="hp-img-with-caption">
       <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-dream_thumb-small.jpg"
-        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-dream_thumb-medium 600w,
+        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-dream_thumb-medium.jpg 600w,
                 {{ page.root }}/img/exhibit-a/hp-photo-dream_thumb-large.jpg 1200w"
         class="img-responsive lazyload" alt="Photo of the Dream Lake in the Rocky Mountain National Park" />
       <div class="hp-img-caption">
@@ -169,7 +150,7 @@ categories: photography photo-story new
 
     <div class="hp-img-with-caption">
       <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-loch_thumb-small.jpg"
-        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-loch_thumb-medium 600w,
+        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-loch_thumb-medium.jpg 600w,
                 {{ page.root }}/img/exhibit-a/hp-photo-loch_thumb-large.jpg 1200w"
         class="img-responsive lazyload" alt="Photo of the Loch Vale in the Rocky Mountain National Park" />
       <div class="hp-img-caption">
@@ -183,7 +164,7 @@ categories: photography photo-story new
 
     <div class="hp-img-with-caption">
       <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-mills-cascade_thumb-small.jpg"
-        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-mills-cascade_thumb-medium 600w,
+        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-mills-cascade_thumb-medium.jpg 600w,
                 {{ page.root }}/img/exhibit-a/hp-photo-mills-cascade_thumb-large.jpg 1200w"
         class="img-responsive lazyload" alt="Photo of a cascade in the Rocky Mountain National Park" />
       <div class="hp-img-caption">
@@ -196,7 +177,7 @@ categories: photography photo-story new
 
     <div class="hp-img-with-caption">
       <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-mills-lake_thumb-small.jpg"
-        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-mills-lake_thumb-medium 600w,
+        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-mills-lake_thumb-medium.jpg 600w,
                 {{ page.root }}/img/exhibit-a/hp-photo-mills-lake_thumb-large.jpg 1200w"
         class="img-responsive lazyload" alt="Photo of the Mills Lake in the Rocky Mountain National Park" />
       <div class="hp-img-caption">
@@ -227,7 +208,7 @@ categories: photography photo-story new
 
     <div class="hp-img-with-caption">
       <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-curecanti-x-small.jpg"
-        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-curecanti-small 800w,
+        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-curecanti-small.jpg 800w,
                 {{ page.root }}/img/exhibit-a/hp-photo-curecanti-medium.jpg 1600w,
                 {{ page.root }}/img/exhibit-a/hp-photo-curecanti-large.jpg 2400w"
         class="img-responsive lazyload" alt="Photo of the Milky Way over Gunnison River gorge." />
@@ -244,7 +225,7 @@ categories: photography photo-story new
   <div class="col-md-6">
     <div class="hp-img-with-caption">
       <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-clear-creek-falls_thumb-small.jpg"
-        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-clear-creek-falls_thumb-medium 600w,
+        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-clear-creek-falls_thumb-medium.jpg 600w,
                 {{ page.root }}/img/exhibit-a/hp-photo-clear-creek-falls_thumb-large.jpg 1200w"
         class="img-responsive lazyload" alt="Photo of the North Clear Creek Falls in southern Colorado." />
       <div class="hp-img-caption">
@@ -257,7 +238,7 @@ categories: photography photo-story new
 
     <div class="hp-img-with-caption">
         <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-dallas_divide_thumb-small.jpg"
-          data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-dallas_divide_thumb-medium 600w,
+          data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-dallas_divide_thumb-medium.jpg 600w,
                   {{ page.root }}/img/exhibit-a/hp-photo-dallas_divide_thumb-large.jpg 1200w"
           class="img-responsive lazyload" alt="Photo of the Dallas Divide near Telluride in south-western Colorado."
           style="padding-top: 6px;" />
@@ -322,7 +303,7 @@ categories: photography photo-story new
 
     <div class="hp-img-with-caption">
       <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-forest-canyon_thumb-small.jpg"
-        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-forest-canyon_thumb-medium 600w,
+        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-forest-canyon_thumb-medium.jpg 600w,
                      {{ page.root }}/img/exhibit-a/hp-photo-forest-canyon_thumb-large.jpg 1200w"
         class="img-responsive lazyload" alt="Photo of the Rocky Mountains from the Forest Canyon overlook on the Trail Ridge Road." />
         <div class="hp-img-caption">
@@ -336,7 +317,7 @@ categories: photography photo-story new
 
     <div class="hp-img-with-caption">
       <img data-sizes="auto" data-src="{{ page.root }}/img/exhibit-a/hp-photo-mt-evans_thumb-small.jpg"
-        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-mt-evans_thumb-medium 600w,
+        data-srcset="{{ page.root }}/img/exhibit-a/hp-photo-mt-evans_thumb-medium.jpg 600w,
                      {{ page.root }}/img/exhibit-a/hp-photo-mt-evans_thumb-large.jpg 1200w"
         class="img-responsive lazyload" alt="Photo of the Rocky Mountains from Mount Evans." />
         <div class="hp-img-caption">
@@ -376,7 +357,7 @@ categories: photography photo-story new
 
 <div class="row">
 
-  <div class="col-md-8 col-md-offset-2 table-responsive">
+  <div class="col-md-8 col-md-offset-2 table-responsive hp-pictorial-text-col">
     <h1>The places</h1>
 
     <table class="table table-striped" summary="Short summary of places for photography in Colorado">
@@ -467,7 +448,7 @@ categories: photography photo-story new
 </div>
 
 <div class="row">
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col-md-6 col-md-offset-3 hp-pictorial-text-col">
     <h1>More resources</h1>
 
     <ul>
@@ -476,9 +457,20 @@ categories: photography photo-story new
       <li><a href="http://pronaturephotographer.com/2012/09/14-great-fall-color-locations-in-colorados-san-juan-mountains/">14 great Fall photo locations</a> in Colorado</li>
       <li>Flickr, instagram and 500px for inspiration</li>
       <li><a href="http://www.nps.gov/romo/index.htm">RMNP National Parks Service website</a></li>
-      <li><a href="movescount.com">Movescount</a> and <a href="http://www.gpsies.com/">GPSies</a> for GPS tracks.</li>
+      <li><a href="http://www.movescount.com">Movescount</a> and <a href="http://www.gpsies.com/">GPSies</a> for GPS tracks.</li>
     </ul>
 
   </div>
 
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 hp-pictorial-text-col hp-pictorial-footer-links-div">
+    <h3>Other posts in this series</h3>
+    <ul>
+      <li><a href="{{ page.root }}/2015/11/21/wyoming-utah-photo.html">Landscape Photography in the Southwest: Part II- Utah and Wyoming</a></li>
+      <li><a href="{{ page.root }}/2016/01/01/arizona-utah-photo.html">Landscape Photography in the Southwest: Part III- Arizona and Southwestern Utah</a></li>
+    </ul>
+
+  </div>
 </div>

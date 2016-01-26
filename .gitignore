@@ -38,7 +38,7 @@ dist
 node_modules
 .tmp
 app/img/exhibit-a
-media-assets/exhibit-a
+media-assets/exhibit-a/
 
 # Ignore for RVM users #
 .ruby-version

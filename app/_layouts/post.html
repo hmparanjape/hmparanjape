@@ -16,7 +16,7 @@ layout: default
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav pull-right">
-        <li><a href="{{page.root}}/exhibit-a.html">Exhibit<span class="hp-exhibit-slash">/</span>A</a></li>
+        <li><a href="{{page.root}}/research.html">Research</a></li>
         <li><a href="{{page.root}}/blog.html">Blog</a></li>
         <li><a href="mailto:hi@hm.paranja.pe"><span class="hp-nav-email">Email</span></a></li>
       </ul>
@@ -25,6 +25,8 @@ layout: default
 </div>
 
 <!-- Container -->
+<div id="hp-blog-empty-top"></div>
+
 <div class="container hp-blog">
 
   <div class="row">
@@ -41,13 +43,19 @@ layout: default
       </div>
 
     </div>
+  </div>
 
+  <div class="row">
 
     <div class="col-md-10 hp-blog-post">
 
       {{ content }}
 
     </div>
+
+  </div>
+
+  <div class="row">
 
     <div class="col-md-10 hp-blog-post-tail">
 
@@ -70,6 +78,15 @@ layout: default
 
     </div>
 
+  </div>
+
+  <div class="row hp-blog-tail-helper-row">
+    <div class="col-md-5 col-xs-6">
+      <a href="{{ page.root }}/blog.html" class="hp-blog-tail-helper">Return to blog</a>
+    </div>
+    <div class="col-md-5 col-xs-6 text-right">
+      <a href="#hp-blog-empty-top" class="hp-blog-scrollup hp-blog-tail-helper">Back to top</a>
+    </div>
   </div>
 
   <!-- Footer -->
