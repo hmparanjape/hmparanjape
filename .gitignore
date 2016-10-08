@@ -39,6 +39,7 @@ node_modules
 .tmp
 app/img/exhibit-a
 media-assets/exhibit-a/
+posts_scratch/
 
 # Ignore for RVM users #
 .ruby-version

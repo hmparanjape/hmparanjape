@@ -427,10 +427,10 @@ AddDefaultCharset utf-8
 # prevent `https://www.example.com` when your certificate only allows
 # `https://secure.example.com`.
 
-# <IfModule mod_rewrite.c>
-#    RewriteCond %{SERVER_PORT} !^443
-#    RewriteRule ^ https://example-domain-please-change-me.com%{REQUEST_URI} [R=301,L]
-# </IfModule>
+<IfModule mod_rewrite.c>
+   RewriteCond %{SERVER_PORT} !^443
+   RewriteRule ^ https://harshadparanjape.com%{REQUEST_URI} [R=301,L]
+</IfModule>
 
 # ------------------------------------------------------------------------------
 # | HTTP Strict Transport Security (HSTS)                                      |
@@ -660,3 +660,5 @@ Redirect 301 /sf /2016/01/07/san-francisco-photo.html
 Redirect 301 /patterns /2016/01/21/moving-diffraction.html
 Redirect 301 /123 http://onetwothree.harshadparanjape.com
 Redirect 301 /brewpf http://brewpf.harshadparanjape.com
+Redirect 301 /400rgb http://www.400rgb.harshadparanjape.com/
+

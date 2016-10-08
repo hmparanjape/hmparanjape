@@ -9,8 +9,8 @@ author:
   name: Harshad Paranjape
   email: contact@harshadparanjape.com
   twitter: hmparanjape
-#url: http://www.harshadparanjape.com
-url: http://localhost/harshadparanjape.com/dist
+url: https://www.harshadparanjape.com
+#url: http://localhost/harshadparanjape.com/dist
 baseurl: ''
 icon: favicon.ico
 locale: en_US

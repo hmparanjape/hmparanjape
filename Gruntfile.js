@@ -321,6 +321,7 @@ module.exports = function (grunt) {
             // Usemin moves CSS and javascript inside of Usemin blocks.
             // Copy moves asset files and directories.
             'img/**/*',
+            'mines-sma/img/**/*',
             // Exclude responsive image sources
             '!img/exhibit-a/bak/**',
             '!img/exhibit-a/source/**',

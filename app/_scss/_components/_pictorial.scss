@@ -303,3 +303,14 @@ img.img-responsive.lazyautosizes.lazyloaded {
 .hp-pictorial-footer-links-div {
   background-color: $gray-lighter;
 }
+
+// Flexbox (equal height) image rows
+.hp-img-flex {
+  padding: 2.5px;
+}
+
+@media (min-width: $screen-tablet) {
+  .hp-img-flex-container {
+    display: flex;
+  }
+}

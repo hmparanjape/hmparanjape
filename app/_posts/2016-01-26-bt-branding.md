@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Visual Identity Development for an Academic Student Group"
-date:   2016-01-25 08:40:00
+date:   2016-01-26 18:40:00
 root: ../../..
-categories: design new
+categories: design
 ---
 
 ![Logo for The Beam Team]({{ site.url }}/img/hp-blog-splash-bt.jpg
