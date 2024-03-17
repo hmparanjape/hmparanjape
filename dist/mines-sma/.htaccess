@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /home/harpar16/.htpasswd
+AuthName "Mines SMA Project Members Area"
+require valid-user

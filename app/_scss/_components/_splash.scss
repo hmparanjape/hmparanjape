@@ -1,53 +1,48 @@
 /* Splash */
 
-/* Desktop styles */
-.hp-splash-intro {
-  //background-color: $gray-lighter;
-  padding: 2em 2em 1.75em 2em;
+.hp-splash,
+.hp-research,
+.hp-bio,
+.hp-contact,
+.hp-interests,
+.hp-apps {
+  margin-top: 2em;
 }
 
-.hp-splash-intro p {
-  //font-size: $font-size-large;
+.hp-topic-title-div h1 {
+  font-size: $font-size-base;
+  color: $gray-light;
+  margin-top: 0em;
 }
 
-.hp-splash-img {
-  margin: auto;
-  width: 85%;
+.hp-splash-intro,
+.hp-research-intro,
+.hp-contact-content,
+.hp-bio-content,
+.hp-blog-list-content,
+.hp-apps-content, {
+  padding: 0em 2em 1.75em 2em;
+}
+
+.hp-apps-content p {
+  margin-bottom: 1.5em;
+}
+
+.hp-app-splash p {
+  margin-top: 0.5em;
 }
 
 /* Moderate screen styles */
 @media (max-width: $screen-desktop) {
-  .hp-splash-intro {
-    padding: 1em;
-  }
-
-  .hp-splash-intro p {
-    font-size: $font-size-base;
-  }
 
 }
 
 /* Medium screen styles */
 @media (max-width: $screen-tablet) {
-  .hp-splash-intro {
-    padding: 2em;
-  }
-
-  .hp-splash-img {
-    margin-left: 20%;
-    width: 60%;
-  }
 
 }
 
 /* Small screen styles */
 @media (max-width: $screen-phone) {
-  .hp-splash-intro {
-    padding: 2em;
-  }
 
-  .hp-splash-img {
-    margin-left: 15%;
-    width: 70%;
-  }
 }

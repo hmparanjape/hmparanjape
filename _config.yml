@@ -4,7 +4,7 @@
 # 3. config.yml
 
 name: harshadparanjape.com
-description: Personal website of Harshad Paranjape with blog 
+description: Personal website of Harshad Paranjape with blog
 author:
   name: Harshad Paranjape
   email: contact@harshadparanjape.com
@@ -35,12 +35,13 @@ markdown: kramdown
 #markdown: redcarpet
 #   extensions: ['fenced_code_blocks', 'smart']
 
-pygments: true
+highlighter: true
 
 excerpt_separator: <!--more-->
 
 # 500px photo embed
 500px_consumer_key_file: 500px_consumer_key
 
-gems:
+plugins:
   - jekyll-feed
+  - jekyll-gist

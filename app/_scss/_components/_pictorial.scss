@@ -111,6 +111,20 @@ html, body {
   }
 }
 
+@media (min-width: $screen-md) {
+  .hp-pictorial-row-valign-md {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .hp-pictorial-row-valign-lg {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .hp-pictorial-section-arrow {
   position: relative;
 }
@@ -165,7 +179,7 @@ html, body {
   margin-bottom: 1em;
 }
 
-.hp-pictorial-post {
+.hp-pictorial-post > div:not(.row-tight) {
   div[class^="col"]{
     padding-left:3px;
     padding-right:3px;
@@ -313,4 +327,19 @@ img.img-responsive.lazyautosizes.lazyloaded {
   .hp-img-flex-container {
     display: flex;
   }
+}
+
+.hp-pictorial-post > .row-tight {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hp-pictorial-post > .row-tight > div[class^="col"] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hp-pictorial-post > .row-tight > .hp-img-flex {
+  margin-top: 0;
+  margin-bottom: 0;
 }

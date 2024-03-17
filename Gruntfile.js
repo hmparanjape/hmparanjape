@@ -17,6 +17,39 @@ module.exports = function (grunt) {
   grunt.initConfig({
     // Configurable paths
     responsive_images: {
+      // img: {
+      //   options: {
+      //     engine: 'im',
+      //     newFilesOnly: true,
+      //     sizes: [{
+      //       width: 400,
+      //       name: 'x-small',
+      //       quality: 70
+      //     },{
+      //       width: 800,
+      //       name: 'small',
+      //       quality: 70
+      //     },{
+      //       width: 1600,
+      //       name: "medium",
+      //       quality: 70
+      //     },{
+      //       width: 2400,
+      //       name: "large",
+      //       quality: 80
+      //     },{
+      //       width: 3600,
+      //       name: "x-large",
+      //       quality: 80
+      //     }]
+      //   },
+      //   files: [{
+      //     expand: true,
+      //     cwd: 'app/img',
+      //     src: ['**.{jpg,png}'],
+      //     dest: 'app/img'
+      //   }]
+      // },
       exhibit_a: {
         options: {
           engine: 'im',

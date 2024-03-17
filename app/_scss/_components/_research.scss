@@ -1,17 +1,32 @@
 /* Research */
 
 /* Desktop styles */
-.hp-research {
+.hp-research-goal,
+.hp-research-modeling,
+.hp-research-experiment,
+.hp-research-publications,
+.hp-research-teaching {
   margin-top: 2em;
 }
 
-.hp-research-icon {
-  height: 6em;
-  margin: 1em auto;
+.hp-research-goal-content,
+.hp-research-modeling-content,
+.hp-research-experiment-content,
+.hp-research-publications-content,
+.hp-research-teaching-content {
+  padding: 0em 2em 1.75em 2em;
+
+  h2 {
+    font-size: $font-size-base;
+    color: #000;
+    margin-top: 0em;
+  }
 }
 
-.hp-research-topic-intro {
-  //font-size: $font-size-large;
+
+.hp-research-icon {
+  height: 6em;
+  margin: 1.5em auto;
 }
 
 .hp-research-splash blockquote,
