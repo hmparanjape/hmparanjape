@@ -533,6 +533,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('deploy', [
     'shell',
+// git subtree push --prefix dist origin gh-pages
     ]);
 
   grunt.registerTask('default', [
